@@ -5,6 +5,9 @@ UNIHIKER_K10 k10;
 uint8_t screen_dir = 2;
 
 void setup() {
+    Serial.begin(115200);
+    sleep(3);
+    Serial.println("\n\n\nUNIHIKER K10 Display QR Code Example");
     k10.begin();
     k10.initScreen(screen_dir);
     k10.creatCanvas();
