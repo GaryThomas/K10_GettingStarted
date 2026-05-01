@@ -24,7 +24,7 @@ void loop() {
     }
     while (!(mind_n_brightness == 0)) {
         k10.rgb->brightness(round(mind_n_brightness));
-        k10.rgb->write(-1, 0x0000FF);
+        k10.rgb->write(-1, 0xFF00FF);
         delay(200);
         mind_n_brightness -= 1;
     }
